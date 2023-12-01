@@ -1,0 +1,53 @@
+#root {
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    color: white;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+body {
+    text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+.logo {
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.header {
+    max-width: 30%;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 600px;
+    min-height: 600px;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+}

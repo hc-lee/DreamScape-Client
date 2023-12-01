@@ -1,0 +1,107 @@
+.prompt-box {
+    margin-top: 3rem;
+    width: 80%;
+    height: 80%;
+    min-width: 512px;
+    min-height: 512px;
+    border-radius: 6px;
+    background-color: rgba(217, 217, 217, 0.85);
+}
+
+.header-description {
+    text-align: left;
+    color: black;
+    font-size: 24px;
+    margin-left: 1.5rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.inner-prompt-box {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.word-count {
+    text-align: right;
+    margin-right: 2rem;
+    color: black;
+}
+
+.dream-text-box {
+    width: 90%;
+    height: 90%;
+    min-height: 512px;
+    min-width: 512px;
+    resize: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: rgba(26, 26, 26, 0.95);
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.submit-button {
+    margin-bottom: 1rem;
+    width: auto;
+    height: 2.5rem;
+    background-color: #d9d9d9;
+    color: black;
+    border: none;
+    font-size: 18px;
+}
+
+.english-box {
+    /* Align checkbox to left of container */
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.loading-gif {
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: auto;
+}
+
+.overlay-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 184, 185);
+    color: black;
+    border: 2px solid black;
+}
+
+.overlay-text {
+    font-family: inherit;
+    font-size: 15px;
+    max-width: 20rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
