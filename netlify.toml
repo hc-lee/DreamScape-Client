@@ -1,6 +1,6 @@
 [[redirects]]
-from = "/api/*"
-to = "http://54.188.27.139:8080/:splat"
+from = "/api/generate_image/"
+to = "http://54.188.27.139:8080/generate_image/"
 status = 200
 force = true
 conditions = {Method = ["POST"]}
