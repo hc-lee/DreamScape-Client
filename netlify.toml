@@ -4,3 +4,8 @@ to = "http://54.188.27.139:8080/generate_image/"
 status = 200
 force = true
 conditions = {Method = ["POST"]}
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
