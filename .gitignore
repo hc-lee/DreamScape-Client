@@ -11,8 +11,6 @@ dist
 dist-ssr
 *.local
 
-/public/
-
 # Node.js dependencies
 node_modules/
 
