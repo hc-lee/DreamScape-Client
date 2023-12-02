@@ -12,7 +12,7 @@ function DreamPromptBox({onInterpretButtonClick}) {
     const handleInterpretClick = () => {
         // Define the API endpoint URL
         setIsLoading(true);
-        const apiUrl = 'https://main--frabjous-heliotrope-3148d9.netlify.app/api/generate_image';
+        const apiUrl = '/api/generate_image';
 
         // Create a JSON object with the description box text
         const requestBody = {
