@@ -2,6 +2,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import Button from 'react-bootstrap/Button';
 import Overlay from 'react-bootstrap/Overlay';
 import '../styles/DreamPromptBox.css';
+import axios from "axios";
 
 function DreamPromptBox({onInterpretButtonClick}) {
     const [dreamText, setDreamText] = useState('');
@@ -19,23 +20,15 @@ function DreamPromptBox({onInterpretButtonClick}) {
             userPrompt: dreamText,
         };
 
-        // Call DreamScape server to generate the image.
-        fetch(apiUrl, {
-            method: 'POST',
+        // Call DreamScape server to generate the image using Axios
+        axios.post(apiUrl, requestBody, {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(requestBody),
         })
             .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Error while generating image');
-                }
-                return response.json();
-            })
-            .then((data) => {
-                // Extract the URL from the response data
-                const imageUrl = data.data[0].url;
+                // Assuming response.data contains the expected data structure
+                const imageUrl = response.data.data[0].url;
 
                 // Trigger the callback function to send the URL to the App().
                 onInterpretButtonClick(imageUrl);
