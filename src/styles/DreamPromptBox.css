@@ -2,8 +2,6 @@
     margin-top: 3rem;
     width: 80%;
     height: 80%;
-    min-width: 512px;
-    min-height: 512px;
     border-radius: 6px;
     background-color: rgba(217, 217, 217, 0.85);
 }
@@ -18,7 +16,7 @@
 .header-container {
     display: flex;
     align-items: center;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 .inner-prompt-box {
@@ -39,7 +37,7 @@
     width: 90%;
     height: 90%;
     min-height: 512px;
-    min-width: 512px;
+    min-width: 60%;
     resize: none;
     margin-left: 1rem;
     margin-right: 1rem;

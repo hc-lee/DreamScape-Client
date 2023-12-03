@@ -32,7 +32,7 @@ p {
 }
 
 .header {
-    max-width: 30%;
+    max-width: 50%;
     margin-left: 2rem;
     display: flex;
     justify-content: flex-start;

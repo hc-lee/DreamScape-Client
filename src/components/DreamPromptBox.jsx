@@ -80,9 +80,9 @@ function DreamPromptBox({onInterpretButtonClick}) {
                     <h3 className={"header-description"}>describe your dream ... </h3>
                     <div className = "button-container">
                         <Button className="overlay-button" ref={target} onClick={() => setShow(!show)}>
-                            ℹ️
+                            <strong>i</strong>
                         </Button>
-                        <Overlay target={target.current} show={show} placement="right">
+                        <Overlay target={target.current} show={show} placement="right-start" container={document.body}>
                             {({
                                   placement: _placement,
                                   arrowProps: _arrowProps,
