@@ -13,6 +13,7 @@ function DreamPromptBox({onInterpretButtonClick}) {
         // Define the API endpoint URL
         setIsLoading(true);
         const apiUrl = '/api/generate_image';
+        // const localApiUrl = 'http://54.188.27.139:8080/generate_image';
 
         // Create a JSON object with the description box text
         const requestBody = {
