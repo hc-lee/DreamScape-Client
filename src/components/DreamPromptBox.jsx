@@ -11,9 +11,9 @@ function DreamPromptBox({onInterpretButtonClick}) {
 
     const handleInterpretClick = () => {
         // Define the API endpoint URL
-        // const apiUrl = '/api/generate_image';
+        const apiUrl = '/api/generate_image';
         // const apiUrl = 'http://54.188.27.139:8080/generate_image';
-        const apiUrl = 'http://localhost:8081/generate_image';
+        // const apiUrl = 'http://localhost:8081/generate_image';
         if (!dreamText || dreamText.length === 0) {
             alert('Please enter a dream description.');
             return;
